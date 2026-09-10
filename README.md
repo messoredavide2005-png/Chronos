@@ -33,4 +33,11 @@ Chronos è un tutor di storia intelligente che legge i tuoi PDF (libri di testo,
 ### 2. Scarica i modelli AI
 ```bash
 ollama pull nomic-embed-text
-ollama pull llama3.2:3b
+ollama pull llama3.2:3bgit clone https://github.com/messoredavide2005/chronos.git
+cd chronos
+python -m venv venv
+venv\Scripts\activate        # Windows
+# source venv/bin/activate   # Mac/Linux
+pip install -r requirements.txt
+streamlit run main.py
+avvio rapido doppio click su desktop 
